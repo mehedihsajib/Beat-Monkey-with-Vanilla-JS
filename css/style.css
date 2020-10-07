@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(156,32,32,1) 48%, rgba(0,17,20,1) 100%);
+}
+
+.header-img {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+/* .header-img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+} */
+
+.beat-monkey {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: .2s ease-out;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Fredoka One', cursive;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 20px;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  color: aliceblue;
+}
+
+.pads {
+  background: lightblue ;
+  width: 100%;
+  display: flex;
+}
+
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.pad1 {
+  background: #60d394;
+}
+
+.pad2 {
+  background: #d36060;
+}
+
+.pad3 {
+  background: #c060d3;
+}
+
+.pad4 {
+  background: #d3d160;
+}
+
+.pad5 {
+  background: #6860d3;
+}
+
+.pad6 {
+  background: #60b2d3;
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  bottom: 0;
+  z-index: 222;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+
+  50% {
+    bottom: 95%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
